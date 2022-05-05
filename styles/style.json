@@ -12,7 +12,8 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://mbtiles/tiles.mbtiles"
+      "tiles": ["http://localhost:8080/data/terrastories-map/{z}/{x}/{y}.pbf"],
+      "maxzoom": 8
     }
   },
   "sprite": "sprite",
