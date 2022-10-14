@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Basic",
+  "name": "Terrastories default offline map",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:type": "template",
@@ -12,7 +12,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "tiles": ["http://localhost:8080/data/terrastories-map/{z}/{x}/{y}.pbf"],
+      "url": "mbtiles://{terrastories-map}",
       "maxzoom": 8
     }
   },
