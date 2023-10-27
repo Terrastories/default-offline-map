@@ -1,23 +1,15 @@
 {
   "version": 8,
   "name": "Terrastories default offline map",
-  "metadata": {
-    "mapbox:autocomposite": false,
-    "mapbox:type": "template",
-    "maputnik:renderer": "mbgljs",
-    "openmaptiles:version": "3.x",
-    "openmaptiles:mapbox:owner": "openmaptiles",
-    "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t"
-  },
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://{terrastories-map}",
+      "url": "pmtiles:///map/tiles/tiles.pmtiles",
       "maxzoom": 8
     }
   },
-  "sprite": "sprite",
-  "glyphs": "{fontstack}/{range}.pbf",
+  "sprite": "map/sprites/sprite",
+  "glyphs": "map/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -155,7 +147,6 @@
     {
       "id": "road_area_pier",
       "type": "fill",
-      "metadata": {},
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "pier"]],
@@ -165,7 +156,6 @@
     {
       "id": "road_pier",
       "type": "line",
-      "metadata": {},
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "LineString"], ["in", "class", "pier"]],
@@ -261,7 +251,6 @@
     {
       "id": "aeroway-area",
       "type": "fill",
-      "metadata": {"mapbox:group": "1444849345966.4436"},
       "source": "openmaptiles",
       "source-layer": "aeroway",
       "minzoom": 4,
@@ -279,7 +268,6 @@
     {
       "id": "aeroway-taxiway",
       "type": "line",
-      "metadata": {"mapbox:group": "1444849345966.4436"},
       "source": "openmaptiles",
       "source-layer": "aeroway",
       "minzoom": 12,
@@ -302,7 +290,6 @@
     {
       "id": "aeroway-runway",
       "type": "line",
-      "metadata": {"mapbox:group": "1444849345966.4436"},
       "source": "openmaptiles",
       "source-layer": "aeroway",
       "minzoom": 4,
@@ -654,5 +641,5 @@
       }
     }
   ],
-  "id": "basic"
+  "id": "tiles"
 }
