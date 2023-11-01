@@ -4,12 +4,12 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "pmtiles:///map/tiles/tiles.pmtiles",
+      "url": "pmtiles://http://localhost:3000/map/terrastories-default/tiles.pmtiles",
       "maxzoom": 8
     }
   },
-  "sprite": "map/sprites/sprite",
-  "glyphs": "map/fonts/{fontstack}/{range}.pbf",
+  "sprite": "http://localhost:3000/map/terrastories-default/sprites/sprite",
+  "glyphs": "http://localhost:3000/map/terrastories-default/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
