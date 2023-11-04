@@ -6,6 +6,10 @@
       "type": "vector",
       "url": "pmtiles://http://localhost:3000/map/terrastories-default/tiles.pmtiles",
       "maxzoom": 8
+    },
+    "attribution": {
+      "attribution": "<a href=\"https://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+      "type": "vector"
     }
   },
   "sprite": "http://localhost:3000/map/terrastories-default/sprites/sprite",
@@ -641,5 +645,5 @@
       }
     }
   ],
-  "id": "tiles"
+  "id": "openmaptiles"
 }

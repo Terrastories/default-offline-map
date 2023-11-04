@@ -1,9 +1,7 @@
-Copyright (c) 2016, KlokanTech.com & OpenMapTiles contributors.  
-Copyright (c) 2014, Mapbox.  
+Copyright (c) 2023, MapTiler.com & OpenMapTiles contributors.
 All rights reserved.
 
-Modifications by KlokanTech.com & OpenMapTiles contributors.  
-Derived from "Mapbox Open Styles" https://github.com/mapbox/mapbox-gl-styles
+The vector tile schema has been developed by Klokan Technologies GmbH and was initially modelled after the cartography of the CARTO's Positron basemap with permission from CartoDB Inc. The vector tile schema has been refined and improved in cooperation with the Wikimedia Foundation and is heavily influenced by years of Paul Norman's experience of creating maps from OpenStreetMap data.
 
 # Code license: BSD 3-Clause License
 
@@ -56,7 +54,5 @@ credit should appear in the corner of the map. For example:
 For printed and static maps a similar attribution should be made in a textual
 description near the image, in the same fashion as if you cite a photograph.
 
-Exceptions to OpenMapTiles attribution requirement can be in a written form granted
-by Klokan Technologies GmbH (info@klokantech.com).  
-The project contributors grant Klokan Technologies GmbH the license to give such
-exceptions on a commercial basis.
+Exceptions to OpenMapTiles attribution requirement can be in a written form granted by MapTiler (info@maptiler.com).
+The project contributors grant MapTiler AG the license to give such exceptions on a commercial basis.
