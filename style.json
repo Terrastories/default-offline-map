@@ -1,17 +1,17 @@
 {
   "version": 8,
-  "name": "Terrastories default offline map",
+  "name": "Terrastories offline map",
   "sources": {
     "protomaps": {
       "type": "vector",
-      "url": "pmtiles://http://localhost:3000/map/terrastories-default/planet.pmtiles"
+      "url": "pmtiles://http://localhost:3000/map/terrastories-map/planet.pmtiles"
     },
     "attribution": {
       "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Protomaps</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
       "type": "vector"
     }
   },
-  "glyphs": "http://localhost:3000/map/terrastories-default/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "http://localhost:3000/map/terrastories-map/fonts/{fontstack}/{range}.pbf",
   "layers": [
         {
             "id": "background",
