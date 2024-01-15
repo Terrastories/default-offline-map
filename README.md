@@ -1,6 +1,43 @@
 # Terrastories Default Offline Map
 
-This repository provides open-license offline map tiles (from OpenMapTiles) and accompanying style, font glyphs, and sprites to use with Terrastories.
+This repository provides open-license offline map tiles (from OpenMapTiles) and accompanying style, font glyphs, and sprites to use with Terrastories using [TileserverGL](https://github.com/maptiler/tileserver-gl) by MapTiler.
+
+## Usage
+
+Map data provided here is free to use.
+
+### Docker
+
+The Docker image contains the default Terrastories map pre-bundled for use.
+
+1. Pull Docker image
+   ```
+   docker pull terrastories/terrastories-map
+   ```
+2. And run Tileserver
+   ```
+   docker run --rm -it -p 8080:8080 terrastories/terrastories-map
+   ```
+
+Access Tileserver and Terrastories Map at localhost:8080.
+
+#### Compose
+
+Use the image in a Compose service:
+
+```
+services:
+  tiles:
+    image: terrastories/terrastories-map:latest
+    pull_policy: always
+  ports:
+    - 8080:8080
+```
+
+Run `docker compose up`.
+Access Tileserver and Terrastories Map at localhost:8080.
+
+### Manual
 
 To use these offline tiles, 
 
